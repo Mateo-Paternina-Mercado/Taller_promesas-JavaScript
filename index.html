@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promesas en JavaScript: Promise.race(), Promise.any() y Promise.all()</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Explorando Métodos de Promesas en JavaScript</h1>
+    <p>Promise.race(), Promise.any() y Promise.all()</p>
+</header>
+
+<div class="section">
+    <div class="method">
+        <h2>1. Promise.race()</h2>
+        <p><strong>Propósito:</strong> <code>Promise.race()</code> devuelve una promesa que se resuelve o rechaza cuando la primera promesa de un iterable se resuelve o rechaza.</p>
+        <button id="btn-race">Ejecutar Promise.race()</button>
+        <div class="example">
+            <p><strong>Resultado:</strong></p>
+            <pre id="race-example">
+                Esperando resultado...
+            </pre>
+        </div>
+    </div>
+
+    <div class="method">
+        <h2>2. Promise.any()</h2>
+        <p><strong>Propósito:</strong> <code>Promise.any()</code> devuelve una promesa que se resuelve cuando al menos una de las promesas se resuelve. Si todas fallan, se rechaza.</p>
+        <button id="btn-any">Ejecutar Promise.any()</button>
+        <div class="example">
+            <p><strong>Resultado:</strong></p>
+            <pre id="any-example">
+                Esperando resultado...
+            </pre>
+        </div>
+    </div>
+
+    <div class="method">
+        <h2>3. Promise.all()</h2>
+        <p><strong>Propósito:</strong> <code>Promise.all()</code> devuelve una promesa que se resuelve cuando todas las promesas se resuelven o se rechaza si alguna falla.</p>
+        <button id="btn-all">Ejecutar Promise.all()</button>
+        <div class="example">
+            <p><strong>Resultado:</strong></p>
+            <pre id="all-example">
+                Esperando resultado...
+            </pre>
+        </div>
+    </div>
+</div>
+
+<div class="rating-section">
+    <h2>¡Califica esta página!</h2>
+    <form id="rating-form">
+        <label for="user-name">Tu nombre:</label>
+        <input type="text" id="user-name" required placeholder="Ingresa tu nombre" />
+        
+        <label for="rating">Calificación (1-5):</label>
+        <input type="number" id="rating" min="1" max="5" required placeholder="1-5" />
+        
+        <button type="submit">Enviar calificación</button>
+    </form>
+
+    <div id="rating-feedback">
+        <!-- Aquí se mostrará la calificación enviada -->
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Taller Promesas en JavaScript</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
